@@ -1,0 +1,301 @@
+/* Base styles (for larger screens) */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-image: url('pexels-vidalbalielojrfotografia-1250655.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    height: 90vh;
+    display: flex;
+    align-items: left;
+}
+
+.header-content {
+    padding: 50px;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+header h3 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.features {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px 10px;
+}
+
+.features .nav-link {
+    color: #333;
+    padding: 10px;
+}
+
+svg {
+    margin: 10px;
+}
+
+img {
+    border-radius: 50px 50px;
+}
+
+button {
+    background-color: rgb(70, 218, 136);
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    margin-left: 15px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(133, 236, 202);
+    cursor: pointer;
+}
+
+.stats {
+    margin-top: 20px;
+}
+
+.stat-item h4 {
+    font-size: 1.5em;
+}
+
+.stat-item h6 {
+    font-size: 1em;
+}
+
+.team-section .card,
+.departments-section .card,
+.reviews-section .card {
+    margin: 20px 0;
+    transition: transform 0.2s;
+}
+
+.team-section .card:hover,
+.departments-section .card:hover,
+.reviews-section .card:hover {
+    background-color: #ece2e2;
+    transform: scale(1.05);
+}
+
+.about-section p,
+.reviews-section p {
+    font-size: 1.1em;
+}
+
+.reviews-section {
+    background-color: #a1dabb;
+}
+
+.about-section img {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.departments-section img {
+    border-radius: 50px 50px;
+}
+
+.team-section img {
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #095f23;
+    color: #fff;
+}
+
+
+/* Media Queries */
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575.98px) {
+    header {
+        height: 70vh;
+        padding: 50px 0;
+        align-items: center;
+        text-align: center;
+    }
+    .header-content {
+        padding: 20px;
+        margin-left: 0;
+    }
+    header h3 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    .features .nav-link {
+        padding: 5px;
+    }
+    .features {
+        margin-top: 10px;
+    }
+    .stat-item h4 {
+        font-size: 1.2em;
+    }
+    .stat-item h6 {
+        font-size: 0.9em;
+    }
+    .card .card-body {
+        padding: 10px;
+    }
+    button {
+        width: 70%;
+        padding: 8px;
+        margin-left: 0;
+    }
+    img {
+        border-radius: 10%;
+    }
+    .reviews-section img {
+        border-radius: 50px 50px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 767.98px) {
+    header {
+        height: 80vh;
+        padding: 70px 0;
+        align-items: center;
+        text-align: center;
+    }
+    .header-content {
+        padding: 30px;
+        margin-left: 0;
+    }
+    header h3 {
+        font-size: 2.2em;
+    }
+    header p {
+        font-size: 1.1em;
+    }
+    .features .nav-link {
+        padding: 8px;
+    }
+    .features {
+        margin-top: 15px;
+    }
+    .stat-item h4 {
+        font-size: 1.3em;
+    }
+    .stat-item h6 {
+        font-size: 1em;
+    }
+    .card .card-body {
+        padding: 15px;
+    }
+    button {
+        width: 60%;
+        padding: 9px;
+        margin-left: 0;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (max-width: 991.98px) {
+    header {
+        height: 85vh;
+        padding: 80px 0;
+        align-items: center;
+        text-align: center;
+    }
+    .header-content {
+        margin-top: 10%;
+        padding: 40px;
+        margin-left: 0;
+    }
+    header h3 {
+        font-size: 1.8em;
+    }
+    header p {
+        font-size: 0.95em;
+    }
+    .features .nav-link {
+        padding: 9px;
+    }
+    .features {
+        margin-top: 18px;
+    }
+    .stat-item h4 {
+        font-size: 0.87em;
+    }
+    .stat-item h6 {
+        font-size: 0.7em;
+    }
+    .card .card-body {
+        padding: 18px;
+    }
+    button {
+        width: 55%;
+        padding: 9px;
+        margin-left: 0;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    header {
+        height: 90vh;
+        padding: 100px 0;
+        align-items: left;
+        text-align: left;
+    }
+    .header-content {
+        margin-top: 20%;
+        padding: 50px;
+        margin-left: 10px;
+    }
+    header h3 {
+        font-size: 4.5em;
+    }
+    header p {
+        font-size: 2.2em;
+    }
+    .features .nav-link {
+        padding: 10px;
+    }
+    .features {
+        margin-top: 20px;
+    }
+    .stat-item h4 {
+        font-size: 1.5em;
+    }
+    .stat-item h6 {
+        font-size: 1.1em;
+    }
+    .card .card-body {
+        padding: 20px;
+    }
+    button {
+        width: 50%;
+        padding: 10px;
+        margin-left: 15px;
+    }
+}
